@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciel. Tienda de Plantas</title>
+  <link rel="shortcut icon" href="./img/favicon_32x32.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./detalleProducto.html">
+  <link rel="stylesheet" href="./css/master.css">
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <section id="Encabezado">
+      <nav class="navbar bg-body-tertiary fw-bolder" data-bs-theme="dark">
+        <div class="container-fluid">
+          <span class="navbar-text text-center w-100">
+            10% off con transferencia // 3 cuotas son interes
+          </span>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logoCiel.jpg" width="110" height="60" alt="logoCiel">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav fw-bolder d-flex">
+              <li class="nav-item flex-fill">
+                <a class="nav-link active" aria-current="page" href="#ancla1quienes">Quiénes Somos</a>
+              </li>
+              <li class="nav-item flex-fill">
+                <a class="nav-link" href="#ancla6naturaleza">Naturaleza en casa</a>
+              </li>
+              <li class="nav-item flex-fill">
+                <a class="nav-link" href="#ancla2tienda"> Tienda Plantas Nativas</a>
+              </li>
+              <li class="nav-item flex-fill">
+                <a class="nav-link" href="#ancla3comprar"> Cómo Comprar</a>
+              </li>
+              <li class="nav-item flex-fill">
+                <a class="nav-link" href="#ancla4mariposa">Proyecto Mariposa (RSE)</a>
+              </li>
+              <li class="nav-item flex-fill">
+                <a class="nav-link" href="#ancla5redes">Contacto</a>
+              </li>
+            </ul>
+            <div class="text-right">
+              <a class="btn btn-success" href="#" role="button"><i class="bi bi-person-fill"></i> Mi Cuenta</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Carrusel -->
+    <div id="carrusel">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/carrusel-1.png" class="d-block w-100" alt="mariposas">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carrusel-2.png" class="d-block w-100" alt="nativas">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carrusel-3.png" class="d-block w-100" alt="colibri">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!--Barra de info forma de pago / devolucion / contacto -->
+    <section class="container container-features">
+      <div class="card-feature">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div class="feature-content">
+          <span>Envío gratis desde $20.000</span>
+          <p>A todo el país</p>
+        </div>
+      </div>
+      <div class="card-feature">
+        <i class="fa-solid fa-wallet"></i>
+        <div class="feature-content">
+          <span>Compra Segura</span>
+          <p>¿No te gusta? ¡Devolvelo!</p>
+        </div>
+      </div>
+      <div class="card-feature">
+        <i class="fa-solid fa-credit-card"></i>
+        <div class="feature-content">
+          <span>Elegí cómo pagar</span>
+          <p>Podés pagar con tarjeta, débito, efectivo</p>
+        </div>
+      </div>
+      <div class="card-feature">
+        <i class="fa-solid fa-headset"></i>
+        <div class="feature-content">
+          <span>Servicio al cliente </span>
+          <p>LLámenos al +541155556666</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Quienes somos -->
+    <section style="background-color: white; padding: 30px; margin-top: 30px;">
+      <div id="quienesSomos">
+        <h3 id="ancla1quienes" class="fw-bold text-success text-center">¡Bienvenidos a Ciel, tienda de Plantas!</h3>
+        <hr style="border-color: #4CAF50;">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <iframe width="100%" height="500" src="https://www.youtube.com/embed/mSP2q7RFmBk" frameborder="0"
+                allowfullscreen class="margin-left-2"></iframe>
+            </div>
+            <section class="col-lg-6">
+              <br>
+              <p class="text-sm-justify">En nuestra tienda, nos apasiona la naturaleza y creemos que cada uno de
+                nosotros tiene el poder de
+                transformar su entorno urbano en un oasis de vida y colores. ¿Cómo? A través de la belleza y la magia de
+                nuestras PLANTAS NATIVAS.</p>
+              <br>
+              <h5 class="fw-bold">¿Por qué elegir plantas nativas?</h5>
+              <br>
+              <p class="text-sm-justify">Las plantas nativas son la clave para atraer y mantener la vida silvestre en tu
+                entorno urbano. Son la
+                fuente de alimento y refugio para mariposas, colibríes y otras especies autóctonas. Al cultivar plantas
+                nativas, no solo embelleces tu espacio, sino que también contribuyes al equilibrio ecológico y a la
+                preservación de nuestras especies locales.</p>
+              <br>
+              <h5 class="fw-bold">Nuestro Compromiso con la Biodiversidad</h5>
+              <br>
+              <p class="text-sm-justify">En Ciel, nos enorgullece ofrecerte una amplia variedad de plantas nativas,
+                cuidadosamente seleccionadas
+                para adaptarse a diferentes climas y espacios. Cada planta que vendemos es un testimonio de nuestro
+                compromiso con la biodiversidad y la sostenibilidad. Trabajamos en estrecha colaboración con expertos en
+                conservación para garantizar que nuestras plantas sean auténticas representantes de la flora argentina y
+                que estén libres de pesticidas dañinos.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!--Naturaleza en Casa -->
+      <section
+        style="background-color: #4CAF50; padding: 20px; border-radius: 10px ;color: white; margin-top: 30px; padding-top: 30px; margin-left: 50px; margin-right: 50px;">
+        <div class="container mt-5">
+          <h2 id="ancla6naturaleza" class="text-center fw-bold">Naturaleza en casa</h2>
+          <hr style="border-color: white;">
+          <br>
+          <h5 class="fw-bold text-center">Comparte tu Espacio con Mariposas</h5>
+          <br>
+          <p class="text-center">
+            ¿Alguna vez te has preguntado cómo sería compartir tu espacio con la belleza alada de las mariposas?
+            Imagina por un momento el deleite de observar mariposas danzando en tu propio jardín, posándose con
+            delicadeza en las plantas que tú mismo has cultivado. Visualiza cómo el suave aleteo de sus alas y los
+            colores brillantes añadirían una nueva dimensión de vida y alegría a tu entorno exterior.
+          </p>
+          <br>
+          <p class="text-center">
+            Te invitamos a convertir tu entorno en un refugio para estas criaturas aladas. Con nuestras cuidadosamente
+            seleccionadas plantas nativas, puedes crear un jardín que atraiga a mariposas y colibríes, proporcionando un
+            santuario para la biodiversidad local.
+          </p>
+          <br>
+          <p class="text-center">
+            Cada foto que ves aquí es un recordatorio de la belleza que puedes traer a tu propio rincón de la
+            naturaleza.
+            Así que, ¿por qué no te unes a nosotros en esta emocionante aventura? Echa un vistazo a las imágenes, deja
+            que la inspiración te guíe y comienza tu viaje hacia un jardín lleno de vida y colores que te conectará más
+            profundamente con la naturaleza que te rodea.
+          </p>
+        </div>
+        <section class="container mt-5">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+              <div class="d-flex flex-wrap justify-content-center align-items-center" id="thumbnailImages"
+                style="background-color: #4CAF50; padding: 20px; border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- como comprar -->
+      <section style="background-color: white; padding: 30px; margin-top: 30px;">
+        <div class="container">
+          <div class="text-center">
+            <h3 id="ancla3comprar" class="fw-bold text-success">Cómo Comprar</h3>
+            <hr style="border-color: #4CAF50;">
+            <br>
+            <h5 class="fw-bold mt-3 mb-3">¿Te encanta alguna de nuestras plantas y quieres comprarla? ¡Es fácil! Sigue
+              estos simples pasos:</h5>
+          </div>
+
+          <ol class="list-unstyled mt-3">
+            <li class="mb-2"><i class="bi bi-arrow-right text-success me-2"></i> Selecciona tu Planta: Navega por
+              nuestro catálogo y elige la planta que más te guste.</li>
+            <li class="mb-2"><i class="bi bi-arrow-right text-success me-2"></i> Agrega al Carrito: Haz clic en el botón
+              "Agregar al Carrito". Esto añadirá tu planta al carrito y te llevará allí.</li>
+            <li class="mb-2"><i class="bi bi-arrow-right text-success me-2"></i> Continúa Comprando: Si deseas añadir
+              más productos, continúa explorando y agregando al carrito.</li>
+            <li class="mb-2"><i class="bi bi-arrow-right text-success me-2"></i> Inicia la Compra: Cuando estés listo,
+              haz clic en "Iniciar Compra".</li>
+            <li class="mb-2"><i class="bi bi-arrow-right text-success me-2"></i> Datos de Contacto: Completa tus datos
+              de contacto y selecciona "Continuar".</li>
+            <li class="mb-2"><i class="bi bi-arrow-right text-success me-2"></i> Dirección de Entrega: Ingresa la
+              dirección donde deseas recibir tu planta y haz clic en "Continuar".</li>
+            <li class="mb-2"><i class="bi bi-arrow-right text-success me-2"></i> Método de Envío: Elige el método de
+              envío que mejor se adapte a ti y selecciona "Continuar".</li>
+            <li class="mb-2"><i class="bi bi-arrow-right text-success me-2"></i> Forma de Pago: Selecciona tu método de
+              pago preferido. También puedes optar por "A convenir".</li>
+            <li class="mb-2"><i class="bi bi-arrow-right text-success me-2"></i> Confirmación: Revisa cuidadosamente
+              todos los detalles de tu compra en la página de Confirmación. Luego, haz clic en "Continuar".</li>
+            <li class="mb-2"><i class="bi bi-arrow-right text-success me-2"></i> Datos de Pago: Serás redirigido a otra
+              pantalla para proporcionar los detalles de pago. Recibirás un correo de confirmación, que no es un
+              comprobante de pago.</li>
+            <li class="mb-2"><i class="bi bi-arrow-right text-success me-2"></i> Envío Seguro: Una vez que se acredite
+              el pago, procederemos a enviar tus productos cuidadosamente empacados.</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Tienda de Plantas Nativas -->
+      <section
+        style="background-color: #4CAF50; padding: 30px; border-radius: 10px; color: white; margin-top: 30px; margin-left: 50px; margin-right: 50px;">
+        <h3 id="ancla2tienda" class="text-center fw-bold">Tienda de Plantas Nativas</h3>
+        <hr style="border-color: white;">
+        <div class="container mt-4">
+          <div class="row">
+            <main id="items" class="col-md-8 row">
+              <!-- lista de  productos -->
+            </main>
+            <aside class="col-md-4">
+              <h2 class="text-white">Carrito</h2>
+              <ul id="carrito" class="list-group">
+                <!-- productos en el carrito -->
+              </ul>
+              <hr>
+              <p class="text-right text-dark fs-3">Total: $ <span id="total"></span></p>
+              <br>
+              <div class="text-center">
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar Carrito</button>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- proyecto mariposa RSE -->
+      <section style="background-color: white; padding: 30px;">
+        <div class="container">
+          <div class="text-center">
+            <h3 id="ancla4mariposa" class="fw-bold">Proyecto Mariposa RSE</h3>
+            <hr style="border-color: #4CAF50;">
+            <p>En nuestro compromiso con la Responsabilidad Social Empresarial (RSE), ofrecemos varias opciones para que
+              las
+              empresas participen activamente en la conservación de la biodiversidad y el medio ambiente. Nuestro
+              proyecto
+              "Mariposa RSE" está diseñado para promover una mayor conexión con la naturaleza y fomentar la educación
+              ambiental
+              a través de acciones concretas.</p>
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-4 mb-4">
+              <div class="card" style="background-color: #4CAF50; color: white;">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">Las Mariposas Van a la Escuela</h5>
+                  <p class="card-text">Realización de un jardín de plantas nativas que atraen mariposas y picaflores en
+                    la
+                    Escuela, para luego ver las interacciones entre flora y fauna nativa.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card" style="background-color: #4CAF50; color: white;">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">Jardín de Mariposas</h5>
+                  <p class="card-text">Es una experiencia grupal cuyo objetivo es el armado de jardines de especies
+                    nativas
+                    que atraen mariposas y picaflores en el predio de la empresa aumentando la biodiversidad y generando
+                    restauración ecológica.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card" style="background-color: #4CAF50; color: white;">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold">Barrio + Verdes</h5>
+                  <p class="card-text">Jornadas de plantación de árboles, arbustos y herbáceas nativas que se realiza en
+                    el
+                    área de influencia de la empresa junto al personal de la misma, con el fin de aumentar la
+                    biodiversidad
+                    y generar una mejor calidad de vida.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="mt-4">
+            Estas opciones de RSE no solo benefician al entorno natural y a la comunidad, sino que también fortalecen el
+            compromiso de su empresa con la sostenibilidad y la conservación. Al unirse a nuestro proyecto "Mariposa
+            RSE", su
+            empresa puede marcar la diferencia y contribuir a llenar de vida y colores nuestra ciudad.
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-dark text-light py-5" id="footer">
+        <div class="container">
+          <div class="row">
+            <!-- Logo -->
+            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+              <h5 class="text-center"></h5>
+              <img src="./img/logo footer.png" alt="Logo de la empresa" class="img-fluid">
+            </div>
+            <!-- Información de contacto -->
+            <div class="col-12 col-md-3">
+              <h5 id="ancla5redes">Contacto</h5>
+              <br>
+              <p>Dirección: Moldes 1829, CABA</p>
+              <p>Teléfono: +541155556666</p>
+              <p>Correo electrónico: info@cielplantas.com.ar</p>
+              <!-- WhatsApp -->
+              <a href="https://wa.me/+541155556666?text=Hola!%20mi%20nombre%20es%20Silvestre,%20en%20que%20podemos%20ayudarte?"
+                target="_blank" class="text-center">
+                <img src="./img/logo wapp.png" alt="Logo de WhatsApp" class="whatsapp-logo">
+              </a>
+            </div>
+            <!-- Mapa -->
+            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+              <h5 class="text-center"></h5>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13142.034245808762!2d-58.467456651044934!3d-34.56599629754492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d133e88d7b%3A0x774767a9466877c3!2sMoldes%201829%2C%20C1428CRA%20CABA!5e0!3m2!1ses!2sar!4v1689545464070!5m2!1ses!2sar"
+                width="100%" height="200" style="border: 1px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- Redes sociales -->
+            <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+              <h5 class="text-center mb-3">Redes Sociales</h5>
+              <ul class="list-unstyled text-center">
+                <li><a href="https://www.facebook.com/?locale=es_LA" class="text-light">
+                    <i class="fa-brands fa-facebook fa-lg" style="color: #ffffff;"></i>
+                  </a></li>
+                <li><a href="https://www.instagram.com/" class="text-light"><i class="fa-brands fa-instagram fa-lg"
+                      style="color: #ffffff;"></i></a></li>
+                <li><a href="https://twitter.com/?lang=es" class="text-light"><i class="fa-brands fa-x-twitter fa-lg"
+                      style="color: #ffffff;"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <br>
+        </div>
+        <div id="subir">
+          <a href="#Encabezado" class="fixed-bottom"><ion-icon name="chevron-up-circle-outline"></ion-icon></a>
+        </div>
+      </footer>
+      <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script src="./js/master.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

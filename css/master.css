@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+  --color1: #427e38;
+  --color2: #315f2a;
+  --color3: #213f1c;
+  --color4: #10200e;
+  --color5: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p, a, input, textarea, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Navbar*/
+.navbar {
+  background-color: white; 
+  color: var(--color4); 
+}
+
+.navbar a.nav-link {
+  color: var(--color1); 
+}
+
+.btn-success {
+  background-color: var(--color1); 
+  border-color: var(--color1);
+  color: white
+}
+
+/* Barra de info forma de pago /devolucion /contacto */
+.container-features {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem; 
+	padding: 2rem 0; 
+  }
+  
+  .card-feature {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem; 
+	background-color: #fff;
+	border-radius: 1rem;
+	padding: 1rem;
+  }
+  
+  .card-feature i {
+	font-size: 2rem; 
+	color: var(--color1);
+  }
+  
+  .feature-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem; 
+   }
+  
+  .feature-content span {
+	font-weight: 700;
+	font-size: 1rem; 
+	color: var(--color4);
+  }
+  
+  .feature-content p {
+	font-size: 0.8rem; 
+	color: var(--color4);
+  }
+
+  /*carrito*/
+  .card .btn {
+    font-size: 14px; 
+    margin-top: auto; 
+  }
+
+  .card-title {
+    font-size: 16px; 
+  }
+
+  h2.text-white {
+    text-align: center;
+  }
+  
+  #carrito .btn-danger {
+    float: right;
+    margin-left: 8px;
+  }
+  
+  
+.card-body {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px; 
+  margin-bottom: 10px; 
+}
+
+/* Estilo para los botones */
+.card-body .btn-danger,
+.card-body .btn-success {
+  width: 100%;
+  font-size: 0.8rem; 
+  margin-top: 10px; 
+}
+
+
+  ion-icon {
+    color: var(--color1);
+    font-size: 4rem;
+    align-self: end;
+
+}
+
+.whatsapp-logo {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 80px; 
+	z-index: 9999; 
+	size: 3rem;
+}
+
+.thumbnail {
+	transition: transform 0.2s;
+  }
+
+  .thumbnail:hover {
+	transform: scale(1.1);
+  }
+
+#footer {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+   }
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+  .navbar {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+
+
+
